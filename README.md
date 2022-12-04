@@ -2,14 +2,33 @@
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
-Try running some of the following tasks:
+## Setup
 
-```shell
+To run any command you need to have .env in your local
+```
+cp .env.test .env
+```
+then update the value in .env file.
+
+
+## Compile Project
+```
+yarn install
+npx hardhat compile
+```
+
+## Run Tests
+
+Use the following commands to run the test cases:
+
+```
 npx hardhat help
 npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+GAS_REPORT=true npx hardhat test
+```
+
+## Contract deployment on test/live network
+npx hardhat deploy --network polygonMumbai --connext <connext-address> --router <router-address>
 ```
 
 ### connext contract info on diffent chains
