@@ -1,13 +1,12 @@
-# Liquidity Sprinker Sdk
+# Liquidity Sprinkle Sdk
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
+Sprinkle sdk is a money lego used to create cross chain disperse with swap functionality.
 
 ## Please use the following instruction to setup, test and deploy the project
 
 ## Send Request to the Connext Cross-Chain
 
-To call Sprinkler disperse function, the user contract needs to do the following step:-
+To call Sprinkle disperse function, the user contract needs to do the following step:-
 
 ```sh
 #  contract address variable
