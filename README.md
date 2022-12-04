@@ -2,6 +2,8 @@
 
 Sprinkle sdk is a money lego used to create cross chain disperse with swap functionality.
 
+![connext](https://user-images.githubusercontent.com/21297284/205472623-83057aac-217d-41a6-9add-a0c2312eea73.jpg)
+
 ## Please use the following instruction to setup, test and deploy the project
 
 ## Send Request to the Connext Cross-Chain
