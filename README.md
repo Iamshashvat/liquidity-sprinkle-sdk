@@ -2,6 +2,58 @@
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
+
+## Please use the following instruction to setup, test and deploy the project
+
+## Send Request to the Connext Cross-Chain
+
+To call Sprinkler disperse function, the user contract needs to do the following step:-
+
+```sh
+#  contract address variable
+ISprinker public sprinkerContract;
+
+# User/ Application contract constructor
+constructor(address _sprinkerContract) {
+    sprinkerContract = ISprinker(_sprinkerContract);
+}
+
+function disperseLiquidity(
+    uint32[] memory destinationDomain,
+    uint256[] memory amount,
+    address[] memory toToken,
+    address[] memory recepient,
+    address sourceAsset,
+    uint256 relayerFee
+) public payable {
+    # implement the business logic
+    sprinkerContract.disperse(
+        destinationDomain, 
+        amount,
+        toToken,
+        recepient,
+        sourceAsset,
+        relayerFee
+    );
+}
+```
+
+## Handle Request from the Connext
+
+
+```sh
+function xReceive(
+        bytes32 _transferId,
+        uint256 _amount,
+        address _asset,
+        address _originSender,
+        uint32 _origin,
+        bytes memory _callData
+    ) external returns (bytes memory){
+    # implement the business logic
+}
+```
+
 ## Setup
 
 To run any command you need to have .env in your local
